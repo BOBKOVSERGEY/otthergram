@@ -34,7 +34,7 @@ a {
   order: 2;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding: 20px 0;
   white-space: nowrap;
   overflow-x: auto;
 }
@@ -45,6 +45,11 @@ a {
   max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  transition: transform 133ms ease-in-out;
+}
+.thumbnail-item:hover {
+  transform: scale(1.2);
+  transition: transform 1s ease-in;
 }
 .thumbnail-image {
   display: block;
@@ -67,6 +72,11 @@ a {
 .detail-image-frame {
   position: relative;
   text-align: center;
+  transition: transform 333ms cubic-bezier(0,.6,.78,.14);
+}
+.is-tiny {
+  transform: scale(0.001);
+  transition: transform 0ms;
 }
 .detail-image {
   width: 90%;
